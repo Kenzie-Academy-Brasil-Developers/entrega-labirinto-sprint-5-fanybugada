@@ -6,6 +6,9 @@ html {
 body {
     display: contents;
 }
+a {
+    text-decoration: none;
+}
 
 footer {
     position: fixed;
