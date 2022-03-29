@@ -1,0 +1,298 @@
+html {
+    margin: 0 auto;
+    padding: 0;;
+}
+
+body {
+    display: contents;
+}
+a {
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 5px;
+    margin-left: 10px;
+    background: rgba(255, 255, 255, .3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    font-size: small;
+}
+
+.gamePage {
+    background-image: url(./spiralMobile.gif);
+    background-size: 100% 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.boxContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: -50%;
+    top: 30%;
+    background: rgba(255, 255, 255, .3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+.mapOfGame {
+    display: flex;
+    /* max-width: 500px; */
+}
+
+
+.player {
+    background-size: 100% 100%;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    animation: change-background 4s  infinite alternate;
+}
+
+.start {
+    background-color:rgb(146, 36, 36);
+    width: 12px;
+    height: 12px;
+}
+
+.freeWay {
+    width: 12px;
+    height: 12px;
+    display: flex;
+}
+
+.wall {
+    background-color: black;
+    width: 12px;
+    height: 12px;
+}
+
+.finish {
+    animation: change-background 4s linear infinite alternate;
+    width: 12px;
+    height: 12px;
+}
+
+.pageStart {
+    display: flex;
+    align-items: center;
+    animation: change-background 4s linear infinite alternate;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    color: black;
+    font-size: large;
+    font-family: 'Kaushan Script', cursive;
+}
+
+    .pageStartContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, .3);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        text-align: center;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+    }
+
+    .pageStartContainer h1 {
+        font-size: 34px;
+    }
+
+    .pageStartContainer h2 {
+        font-size: 24px;
+        margin: 0 auto;
+    }
+
+    .startGame {
+        border: none;
+        cursor: pointer;
+        background: rgba(255, 255, 255, .3);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        padding: 15px;
+        border-radius: 17px;
+        color: black;
+        position: relative;
+    }
+
+.message {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    background-color: black;
+    opacity: 80%;
+    color: whitesmoke;
+    border-radius: 15px;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
+    opacity: 80%;
+    color: whitesmoke;
+    font-size: xx-large;
+    border-radius: 15px;
+}
+
+.howToPlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: change-background 4s linear infinite alternate;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    color: black;
+} 
+
+.howToPlay h2 {
+    margin: 10px;
+    text-align: center;
+}
+ 
+.howToPlay img {
+    width: 200px;
+}
+
+.playGame {
+    border: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, .3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    padding: 15px;
+    border-radius: 17px;
+    color: black;
+    /* position: relative; */
+    /* top: 30px; */
+}
+
+
+@keyframes rotacao {
+	0% { 
+        transform:rotate(0deg); 
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+	50% {
+        transform:rotate(180deg); 
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+	100% { 
+        transform:rotate(360deg); 
+    }
+}
+
+@keyframes change-background {
+    0% {
+      background: blue;
+    }
+    50% {
+      background: orange;
+    }
+    100% {
+      background: green;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .start {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .freeWay {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .wall {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .finish {
+        width: 22px;
+        height: 22px;
+    }
+
+    .pageStartContainer {
+        width: 350px;
+        height: 350px;
+    }
+    .pageStartContainer h1 {
+        font-size: 45px;
+    }
+
+    .pageStartContainer h2 {
+        font-size: 30px;
+    }
+
+  }
+
+  @media (min-width: 1024px) {
+    .start {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .freeWay {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .wall {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .finish {
+        width: 25px;
+        height: 25px;
+    }
+
+    .pageStartContainer {
+        width: 400px;
+        height: 400px;
+    }
+
+    .pageStartContainer h1 {
+        font-size: 50px;
+    }
+
+    .pageStartContainer h2 {
+        font-size: 34px;
+        margin: 0 auto;
+    }
+
+    .gamePage {
+        background-image: url(./spiralDesktop.gif);
+        background-size: 100% 100%;
+    }
+
+    .startGame {
+        top: 30px;
+    }
+}
